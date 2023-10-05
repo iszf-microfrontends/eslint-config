@@ -1,0 +1,62 @@
+{
+  "name": "@iszf-microfrontends/eslint-config",
+  "version": "0.0.1",
+  "description": "Shared eslint configuration",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./base": "./src/base.js",
+    "./react": "./src/react.js"
+  },
+  "author": "Sviatoslav Nazin <sviatoslavnazin@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iszf-microfrontends/eslint-config.git"
+  },
+  "license": "ISC",
+  "scripts": {
+    "format": "prettier . --write --ignore-path node_modules/@iszf-microfrontends/prettier-config/.prettierignore",
+    "prep": "pnpm format && git add .",
+    "release": "pnpm format && pnpm publish"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.4",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard-with-typescript": "^39.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^16.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.8.8"
+  },
+  "peerDependenciesMeta": {
+    "eslint-plugin-react": {
+      "optional": true
+    },
+    "eslint-plugin-react-hooks": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@iszf-microfrontends/prettier-config": "^0.0.1",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.4",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard-with-typescript": "^39.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^16.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.8.8"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
