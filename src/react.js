@@ -6,6 +6,8 @@ module.exports = {
   extends: [require.resolve('./base.js'), 'plugin:react/recommended', 'plugin:react-hooks/recommended', 'plugin:prettier/recommended'],
   rules: {
     'react/react-in-jsx-scope': 'off',
+
+    'arrow-body-style': ['error', 'as-needed'],
   },
   settings: {
     react: {
