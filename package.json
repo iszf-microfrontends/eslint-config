@@ -1,6 +1,6 @@
 {
   "name": "@iszf-microfrontends/eslint-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Shared eslint configuration",
   "main": "index.js",
   "exports": {
