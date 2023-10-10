@@ -9,7 +9,6 @@ module.exports = {
     sourceType: 'module',
   },
   extends: ['standard-with-typescript', 'plugin:prettier/recommended'],
-  ignorePatterns: ['dist', 'coverage', '.eslintrc.js', '.eslintrc.cjs'],
   rules: {
     '@typescript-eslint/strict-boolean-expressions': 'off',
     '@typescript-eslint/no-confusing-void-expression': 'off',
