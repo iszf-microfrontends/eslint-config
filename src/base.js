@@ -29,6 +29,7 @@ module.exports = {
         checksVoidReturn: false,
       },
     ],
+    '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
 
     'import/newline-after-import': 'error',
     'import/order': [
