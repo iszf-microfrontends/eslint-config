@@ -49,7 +49,22 @@ module.exports = {
     ],
 
     'no-return-await': 'error',
-    'arrow-body-style': ['error', 'as-needed'],
     'prefer-template': 'error',
+    'arrow-body-style': ['error', 'as-needed'],
+    curly: ['error', 'all'],
+    'no-plusplus': 'error',
+    'no-use-before-define': [
+      'error',
+      {
+        functions: false,
+        classes: false,
+        variables: true,
+        allowNamedExports: false,
+      },
+    ],
+    'no-unused-vars': [
+      'error',
+      { vars: 'all', args: 'after-used', argsIgnorePattern: '^_', ignoreRestSiblings: false },
+    ],
   },
 };
