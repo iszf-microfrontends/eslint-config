@@ -1,1 +1,1 @@
-module.exports = require('./src/react');
+module.exports = require('./src/base');
